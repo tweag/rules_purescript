@@ -123,12 +123,12 @@ def purescript_toolchain():
         exec_compatible_with = [
             "@bazel_tools//platforms:x86_64",
             "@bazel_tools//platforms:linux",
-            "@io_tweag_rules_purescript//purescript/platforms:nixpkgs",
+            "@io_tweag_rules_purescript//purescript/platforms:nixos",
         ],
         target_compatible_with = [
             "@bazel_tools//platforms:x86_64",
             "@bazel_tools//platforms:linux",
-            "@io_tweag_rules_purescript//purescript/platforms:nixpkgs",
+            "@io_tweag_rules_purescript//purescript/platforms:nixos",
         ],
         toolchain = ":purs_linux_nixpkgs",
         toolchain_type = "@io_tweag_rules_purescript//purescript:toolchain_type",
