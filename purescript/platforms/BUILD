@@ -1,6 +1,7 @@
+constraint_setting(name = "distro")
 constraint_value(
-    name = "nixpkgs",
-    constraint_setting = "@bazel_tools//tools/cpp:cc_compiler",
+    name = "nixos",
+    constraint_setting = ":distro",
     visibility = ["//visibility:public"],
 )
 
@@ -11,7 +12,7 @@ platform(
         # cycle for some reason.
         "@bazel_tools//platforms:x86_64",
         "@bazel_tools//platforms:linux",
-        ":nixpkgs",
+        ":nixos",
     ],
     visibility = ["//visibility:public"],
 )
