@@ -1,5 +1,3 @@
-<p align="left"><img src="logo/horizontal.png" alt="rules_purescript" height="100px"></p>
-
 # Purescript rules for [Bazel][bazel]
 
 Bazel automates building and testing software. It scales to very large
